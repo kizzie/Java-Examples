@@ -7,7 +7,7 @@ public class main {
 	public static void main(String[] args) {
 
 		Car katsCar = new Car("Skoda", "Blue");
-
+		
 		katsCar.setAge(2);
 
 		System.out.println(katsCar.getAge());

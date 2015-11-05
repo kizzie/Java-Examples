@@ -1,7 +1,6 @@
 package Objects;
 
 public class Doll {
-	
 	//fields
 	String name;
 	String make;
