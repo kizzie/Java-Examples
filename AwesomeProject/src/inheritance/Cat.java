@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Cat extends Animal implements FetchPaper{
+public class Cat extends Animal implements FetchPaper, Comparable{
 
 	double laziness;
 	boolean fluffy;
@@ -38,6 +38,22 @@ public class Cat extends Animal implements FetchPaper{
 	public String sulk() {
 		System.out.println("think I'm a dog do you. I'll get you.");
 		return "humph";
+	}
+
+	@Override
+	public int compareTo(Object arg0) {
+		
+		Cat that = (Cat) arg0;
+		
+		if (this.laziness < that.laziness) {
+			return 1;
+		} else if (this.laziness == that.laziness){
+			return 0;
+		} else {//if (this.laziness > that.laziness) {
+			return -1;
+		}
+		
+//		return 99;
 	}
 
 //	@Override

@@ -1,5 +1,8 @@
 package inheritance;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import Objects.Car;
 
 public class main {
@@ -19,5 +22,43 @@ public class main {
 		if (d instanceof Object) {
 			System.out.println("found a dog it's useful");
 		}
+		
+		ArrayList<Cat> catList = new ArrayList<>();
+		catList.add(c);
+		catList.add(new Cat("Digit", 99, false));
+		catList.add(new Cat("Kitty", 2, true));
+		catList.add(new Cat("KatsKat", 50, true));
+		
+		System.out.println("Before");
+		for(Cat c1 : catList){
+			System.out.println(c1);
+		}
+		
+		Collections.sort(catList);
+		
+		System.out.println("After");
+		for(Cat c1 : catList){
+			System.out.println(c1);
+		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+
